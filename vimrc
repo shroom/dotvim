@@ -2,6 +2,7 @@ filetype on
 filetype off
 filetype plugin on
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 filetype plugin indent on
 set nocompatible
 set modelines=0
