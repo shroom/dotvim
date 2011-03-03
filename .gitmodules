@@ -7,3 +7,6 @@
 [submodule "bundle/indentanything"]
 	path = bundle/indentanything
 	url = https://github.com/vim-scripts/IndentAnything.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/Command-T.git
