@@ -4647,7 +4647,8 @@ loop:   for (;;) {
                     adjacent(token, nexttoken);
                     f = doFunction(i);
                     if (funct['(loopage)']) {
-                        warning("Don't make functions within a loop.", t);
+                        //Mat: stupid
+                        //warning("Don't make functions within a loop.", t);
                     }
                     p = f['(params)'];
                     if (p) {
@@ -4783,7 +4784,8 @@ loop:   for (;;) {
         }
         doFunction(i);
         if (funct['(loopage)']) {
-            warning("Don't make functions within a loop.");
+            //Mat: stupid
+            //warning("Don't make functions within a loop.");
         }
         return this;
     });

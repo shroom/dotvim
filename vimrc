@@ -54,8 +54,6 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 nmap <Space> i_<Esc>r
 
 "search
-nnoremap / /\v
-vnoremap / /\v
 set incsearch       "incremental search"
 set hlsearch        "high light search"
 set ignorecase      "ignore case"
