@@ -116,3 +116,6 @@ cab Wq! wq!
 cab WQ! wq!
 cab wQ! wq!
 iab nei nie
+
+"TODO remove when fixed in jslint
+let $JS_CMD='node'
