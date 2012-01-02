@@ -93,8 +93,13 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
+"map gundo to F5
+nnoremap <F5> :GundoToggle<CR>
+
 "remove white spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
+"remove fugitive's buffers when hidden
+autocmd BufReadPost fugitive://* set bufhidden=delete
 
 "leader stuff
 "Ack
