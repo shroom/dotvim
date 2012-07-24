@@ -2536,7 +2536,8 @@ loop:   for (;;) {
 //"Expected an assignment or function call and instead saw an expression.",
 //                        token);
             } else if (r.id === '(' && r.left.id === 'new') {
-                warning("Do not use 'new' for side effects.");
+                // Mat: stupid
+                //warning("Do not use 'new' for side effects.");
             }
             if (nexttoken.id !== ';') {
                 warningAt("Missing semicolon.", token.line,
