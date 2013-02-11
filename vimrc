@@ -95,6 +95,8 @@ vnoremap <F1> <ESC>
 
 "map gundo to F5
 nnoremap <F5> :GundoToggle<CR>
+"map NERDTree to F2
+nnoremap <F2> :NERDTreeToggle<CR>
 
 "remove white spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
@@ -103,7 +105,7 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 
 "leader stuff
 "Ack
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ack!
 "split windows
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
@@ -121,6 +123,3 @@ cab Wq! wq!
 cab WQ! wq!
 cab wQ! wq!
 iab nei nie
-
-"TODO remove when fixed in jslint
-let $JS_CMD='node'

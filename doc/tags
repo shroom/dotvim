@@ -20,6 +20,14 @@
 'NERDTreeWinPos'	NERD_tree.txt	/*'NERDTreeWinPos'*
 'NERDTreeWinSize'	NERD_tree.txt	/*'NERDTreeWinSize'*
 'loaded_nerd_tree'	NERD_tree.txt	/*'loaded_nerd_tree'*
+:Ack	ack.txt	/*:Ack*
+:AckAdd	ack.txt	/*:AckAdd*
+:AckFile	ack.txt	/*:AckFile*
+:AckFromSearch	ack.txt	/*:AckFromSearch*
+:AckHelp	ack.txt	/*:AckHelp*
+:LAck	ack.txt	/*:LAck*
+:LAckAdd	ack.txt	/*:LAckAdd*
+:LAckHelp	ack.txt	/*:LAckHelp*
 :NERDTree	NERD_tree.txt	/*:NERDTree*
 :NERDTreeClose	NERD_tree.txt	/*:NERDTreeClose*
 :NERDTreeFind	NERD_tree.txt	/*:NERDTreeFind*
@@ -86,6 +94,10 @@ NERDTreeOptionSummary	NERD_tree.txt	/*NERDTreeOptionSummary*
 NERDTreeOptions	NERD_tree.txt	/*NERDTreeOptions*
 NERDTreeRender()	NERD_tree.txt	/*NERDTreeRender()*
 NERD_tree.txt	NERD_tree.txt	/*NERD_tree.txt*
+ack	ack.txt	/*ack*
+ack-author	ack.txt	/*ack-author*
+ack-mappings	ack.txt	/*ack-mappings*
+ack.txt	ack.txt	/*ack.txt*
 b:blockCommentEndRE	IndentAnything.txt	/*b:blockCommentEndRE*
 b:blockCommentMiddleExtra	IndentAnything.txt	/*b:blockCommentMiddleExtra*
 b:blockCommentMiddleRE	IndentAnything.txt	/*b:blockCommentMiddleRE*
