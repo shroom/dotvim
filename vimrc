@@ -102,6 +102,8 @@ nnoremap <F2> :NERDTreeToggle<CR>
 autocmd BufWritePre * :%s/\s\+$//e
 "remove fugitive's buffers when hidden
 autocmd BufReadPost fugitive://* set bufhidden=delete
+"validate python code with flake8
+autocmd BufWritePost *.py call Flake8()
 
 "leader stuff
 "Ack
@@ -114,6 +116,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 "CommandT
 nnoremap <leader>o :CommandT<CR>
+
+"ignore certain files
+set wildignore+=*.class,.git,.svn
 
 cab W w
 cab Wq wq
