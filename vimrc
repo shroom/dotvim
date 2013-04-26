@@ -71,6 +71,8 @@ if exists('+colorcolumn')
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
+"same thing for flake8
+let g:flake8_max_line_length=120
 
 "matching parentheses"
 set showmatch       "cursor jumps back to matching parenthese"
@@ -116,9 +118,13 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 "CommandT
 nnoremap <leader>o :CommandT<CR>
+nnoremap <leader>cf :CommandTFlush<CR>
 
 "ignore certain files
 set wildignore+=*.class,.git,.svn
+"fix slight delay after pressing ESC then O
+"http://ksjoberg.com/vim-esckeys.html
+set timeout timeoutlen=1000 ttimeoutlen=100
 
 cab W w
 cab Wq wq
