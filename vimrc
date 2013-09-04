@@ -106,6 +106,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufReadPost fugitive://* set bufhidden=delete
 "validate python code with flake8
 autocmd BufWritePost *.py call Flake8()
+"validate Haskell code
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 "leader stuff
 "Ack
@@ -119,6 +121,8 @@ nnoremap <C-l> <C-w>l
 "CommandT
 nnoremap <leader>o :CommandT<CR>
 nnoremap <leader>cf :CommandTFlush<CR>
+"NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 "ignore certain files
 set wildignore+=*.class,.git,.svn
@@ -133,4 +137,3 @@ cab wQ wq
 cab Wq! wq!
 cab WQ! wq!
 cab wQ! wq!
-iab nei nie
