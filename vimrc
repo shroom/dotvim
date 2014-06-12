@@ -16,6 +16,7 @@ set shiftwidth=4
 set softtabstop=4
 set syntax=on
 syntax on
+set relativenumber
 set number
 set termencoding=utf-8
 set encoding=utf-8
@@ -78,6 +79,14 @@ let g:flake8_max_line_length=120
 set showmatch       "cursor jumps back to matching parenthese"
 set matchtime=5     "for one milisecond duration"
 
+let g:airline_symbols = {}
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.whitespace = 'Ξ'
+
 "insert mode"
 "nnoremap <up> <nop>
 "nnoremap <down> <nop>
@@ -123,9 +132,11 @@ nnoremap <leader>o :CommandT<CR>
 nnoremap <leader>cf :CommandTFlush<CR>
 "NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+"Dash
+nnoremap <leader>d :Dash<CR>
 
 "ignore certain files
-set wildignore+=*.class,.git,.svn
+set wildignore+=*.class,*.pyc,.git,.svn
 "fix slight delay after pressing ESC then O
 "http://ksjoberg.com/vim-esckeys.html
 set timeout timeoutlen=1000 ttimeoutlen=100
