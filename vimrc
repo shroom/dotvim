@@ -119,8 +119,8 @@ autocmd BufWritePost *.py call Flake8()
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 "leader stuff
-"Ack
-nnoremap <leader>a :Ack!
+"Ag
+nnoremap <leader>a :Ag
 "split windows
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
@@ -132,8 +132,6 @@ nnoremap <leader>o :CommandT<CR>
 nnoremap <leader>cf :CommandTFlush<CR>
 "NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
-"Dash
-nnoremap <leader>d :Dash<CR>
 
 "ignore certain files
 set wildignore+=*.class,*.pyc,.git,.svn
