@@ -105,7 +105,7 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 "map gundo to F5
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <F4> :GundoToggle<CR>
 "map NERDTree to F2
 nnoremap <F2> :NERDTreeToggle<CR>
 
@@ -129,9 +129,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 "NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+"ctrlp
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+nnoremap <leader>o :CtrlP<CR>
 
 "ignore certain files
-set wildignore+=*.class,*.pyc,.git,.svn
+set wildignore+=*/tmp/*,*.so,*.swp,*.class,*.pyc,.git,.svn
 "fix slight delay after pressing ESC then O
 "http://ksjoberg.com/vim-esckeys.html
 set timeout timeoutlen=1000 ttimeoutlen=100
