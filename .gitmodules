@@ -40,3 +40,12 @@
 [submodule "bundle/jshint.vim"]
 	path = bundle/jshint.vim
 	url = https://github.com/wookiehangover/jshint.vim.git
+[submodule "bundle/vim-simple-todo"]
+	path = bundle/vim-simple-todo
+	url = https://github.com/vitalk/vim-simple-todo
+[submodule "bundle/vim-fahrenheit"]
+	path = bundle/vim-fahrenheit
+	url = https://github.com/fcpg/vim-fahrenheit
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git

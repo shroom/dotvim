@@ -72,8 +72,6 @@ if exists('+colorcolumn')
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
-"same thing for flake8
-let g:flake8_max_line_length=120
 
 "matching parentheses"
 set showmatch       "cursor jumps back to matching parenthese"
@@ -86,6 +84,7 @@ let g:airline_symbols.linenr = '␤'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_theme='term'
 
 "insert mode"
 "nnoremap <up> <nop>
@@ -131,7 +130,9 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>n :NERDTreeToggle<CR>
 "ctrlp
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-nnoremap <leader>o :CtrlP<CR>
+nnoremap <leader>p :CtrlP<CR>
+"JSHint
+let JSHintUpdateWriteOnly=1
 
 "ignore certain files
 set wildignore+=*/tmp/*,*.so,*.swp,*.class,*.pyc,.git,.svn
