@@ -36,6 +36,10 @@ set laststatus=2
 set pastetoggle=<f7>
 colorscheme ir_black
 
+"Disable visual bell
+set vb
+set t_vb=
+
 map zp :setlocal spell spelllang=pl <CR>
 map zP :setlocal nospell <CR>
 map ze :setlocal spell spelllang=en_us <CR>
